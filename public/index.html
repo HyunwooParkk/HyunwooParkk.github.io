@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    
+    <body>
+        
+        <div id= "clickme">
+            <p>
+              야호
+            </p>
+        </div>
+        
+        <div id= "clickme2">
+            <p>
+              야호2
+            </p>
+        </div>
+        
+        
+        <div id= "clickme3">
+            <p>
+              야호3
+            </p>
+        </div>
+        
+        <script>
+            $( "#clickme" ).click(function() {
+            $( "#clickme2" ).fadeOut( "slow", function() {
+                  // Animation complete.
+             });
+            });
+            
+            $( "#clickme3" ).click(function() {
+            $( "#clickme2" ).fadeIn( "slow", function() {
+                 // Animation complete
+             });
+        });
+        </script>
+    </body>
+</html>
